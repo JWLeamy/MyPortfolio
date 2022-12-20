@@ -1,0 +1,46 @@
+:root {
+    --heavyblue: #2E3047;
+    --mediumblue: #3C3F58;
+    --lightblue: #707793;
+    --mint: #3bba9c;
+    --gold: #ffd700;
+    --main: #43455c;
+}
+
+
+
+.navbar {
+    height: 100%;
+    width: fit-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 5px solid grey;
+}
+
+.closebtn {
+    text-decoration: none ;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin-left: 50px;
+  }
+
+.options {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.options a {
+    text-decoration: none;
+    margin: 15%;
+    width: max-content;
+    border: 5px solid grey;
+}
+
