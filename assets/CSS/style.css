@@ -1,6 +1,6 @@
 /*  Importing varous fonts from google  */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display+SC&display=swap');
 :root {
     --heavyblue: #2E3047;
     --mediumblue: #3C3F58;
@@ -10,12 +10,27 @@
     --main: #43455c;
 }
 
+/*  Basic Styling and Layout  */
+html {
+    height: 100%;
+}
+
 body {
     color: white;
     background-color: var(--mediumblue);
     font-family: 'Quicksand', sans-serif;
+    height: 100%;
 }
 
+main {
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+/*  Navbar CSS Styling  */
 .navbar {
     height: 100%;
     width: 15%;
@@ -27,7 +42,6 @@ body {
     padding-top: 60px;
     background-color: var(--heavyblue);
 }
-
 
 .options {
     display: flex;
@@ -52,4 +66,12 @@ body {
 .navcon {
     color: white;
     font-size: x-large;
+}
+
+/*  About Me Section Styling */
+.aboutme {
+    font-family: 'Playfair Display SC', serif;
+    width: 50%;
+    background-color: var(--lightblue);
+    height: 500px;
 }
