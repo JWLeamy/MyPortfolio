@@ -1,3 +1,6 @@
+/*  Importing varous fonts from google  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=VT323&display=swap');
+
 :root {
     --heavyblue: #2E3047;
     --mediumblue: #3C3F58;
@@ -7,27 +10,24 @@
     --main: #43455c;
 }
 
-
+body {
+    color: white;
+    background-color: var(--mediumblue);
+    font-family: 'Quicksand', sans-serif;
+}
 
 .navbar {
     height: 100%;
-    width: fit-content;
+    width: 15%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     transition: 0.5s;
     padding-top: 60px;
-    border: 5px solid grey;
+    background-color: var(--heavyblue);
 }
 
-.closebtn {
-    text-decoration: none ;
-    position: absolute;
-    top: 0;
-    right: 5px;
-    margin-left: 50px;
-  }
 
 .options {
     display: flex;
@@ -39,8 +39,17 @@
 
 .options a {
     text-decoration: none;
-    margin: 15%;
+    margin: 25%;
     width: max-content;
-    border: 5px solid grey;
+    text-align: center;
 }
 
+.options a:visited {
+    text-decoration: none;
+    color: var(--mint);
+}
+
+.navcon {
+    color: white;
+    font-size: x-large;
+}
