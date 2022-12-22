@@ -26,12 +26,29 @@ body {
 
 main {
     margin-left: 15%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 100%;
     align-items: center;
 }
+
+/*  Scroll Properties  */
+.hidden {
+    position: relative;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+/*Use this class when you want your content to be shown after some scroll*/
+.show {
+    position: relative;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: 1.5s;
+}
+
 
 /*  Navbar CSS Styling  */
 .navbar {
@@ -73,7 +90,7 @@ main {
 
 /*  Homepage Section Styling  */
 .homepage {
-    margin-top: 50%;
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,15 +102,49 @@ main {
 
 .title h1 {
     font-size: 100px;
-    margin-bottom: 0px;
     color: var(--gold);
     font-family: 'Caramel', curisve;
 }
 
 .title p {
     color: var(--lightblue);
+    margin-top: 20%;
 }
 
+.name {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+}
+
+@keyframes name {
+    0%,60%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.name span {
+  display: inline-block;
+  animation: name 2s;
+  animation-delay: calc(.1s * var(--i));
+}
+
+.homepage h2 {
+    position: relative;
+}
+/*  Welcome Section Styling  */
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    place-items: center;
+    margin-top: 400px;
+}
 /*  About Me Section Styling */
 .aboutme {
     margin-top: 500px;
@@ -102,7 +153,7 @@ main {
     margin-right: 30%;
 }
 
-.myname {
+.aboutme h2 {
     font-family: 'Luxurious Roman', cursive;
     font-size: 350%;
     border-bottom: solid 4px var(--lightblue);
