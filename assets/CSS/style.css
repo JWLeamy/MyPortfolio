@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    margin-left: 15%;
+    padding: 16px;
     justify-content: center;
     height: 100%;
     align-items: center;
@@ -40,7 +40,6 @@ main {
     transition: all 1s;
 }
 
-/*Use this class when you want your content to be shown after some scroll*/
 .show {
     position: relative;
     opacity: 1;
@@ -49,18 +48,33 @@ main {
     transition: 1.5s;
 }
 
-
 /*  Navbar CSS Styling  */
+@media screen and (max-height: 450px) {
+    .navbar {padding-top: 15px;}
+  }
+
 .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 0%;
     height: 100%;
-    width: 15%;
-    position: fixed;
+    position:fixed;
     z-index: 1;
     top: 0;
     left: 0;
     transition: 0.5s;
-    padding-top: 60px;
     background-color: var(--heavyblue);
+}
+
+.menubutton {
+    width: max-content;
+    position: fixed;
+    margin-left: 20%;
+}
+
+.menubutton:hover {
+    cursor: pointer;
 }
 
 .options {
@@ -86,6 +100,10 @@ main {
 .navcon {
     color: white;
     font-size: x-large;
+}
+
+.navbut {
+    visibility: collapse;
 }
 
 /*  Homepage Section Styling  */
@@ -126,10 +144,26 @@ main {
     }
   }
 
-.name span {
+@keyframes up {
+    to {transform: rotate(360dg);}
+}
+
+@keyframes down {
+    to {transform: rotate(0deg);}
+}
+
+.l {
   display: inline-block;
   animation: name 2s;
   animation-delay: calc(.1s * var(--i));
+}
+
+.name span {
+    transition: transform 1550ms;
+}
+.name span:hover {
+    transform: translateY(-20px);
+    animation: name 2s;
 }
 
 .homepage h2 {
@@ -143,7 +177,7 @@ main {
     width: 100%;
     position: relative;
     place-items: center;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 /*  About Me Section Styling */
 .aboutme {
@@ -158,3 +192,4 @@ main {
     font-size: 350%;
     border-bottom: solid 4px var(--lightblue);
 }
+
