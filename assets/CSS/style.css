@@ -105,6 +105,8 @@ main {
   right: 0;
   top: 0;
   z-index: -1;
+  transition: 2s;
+
 }
 
 .icon svg {
@@ -114,6 +116,11 @@ main {
   left: calc(50% - 15px);
   transform: rotate(-45deg);
   fill: var(--gold);
+  transition: 1s;
+}
+
+.icon svg:hover {
+    transition: 1s;
 }
 
 .abut:hover {
@@ -121,6 +128,7 @@ main {
   border: 3px solid var(--gold);
   border-radius: 400px;
   color: var(--gold);
+  transition: all 1s;
 }
 
 .abut:hover + .icon {

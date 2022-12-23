@@ -17,6 +17,7 @@ function openNav() {
   $(".navbar").css("margin-Left", "15%");
   $("main").css("padding-left", "15%")
   $(".navbut").css("visibility", "visible");
+  $(".icon svg").css("transform", "rotate(135deg)")
 }
 
 function closeNav() {
@@ -24,6 +25,7 @@ function closeNav() {
   $("main").css("padding-left", "0")
   $(".navbar").css("margin-Left", "0");
   $(".navbut").css("visibility", "collapse");
+  $(".icon svg").css("transform", "rotate(-45deg)")
 }
 
 //----------- Scroll Effects With JavaScript functions --------------//
