@@ -2,7 +2,7 @@
 //----------- NavBar Effects --------------//
 
 function setNav() {
-    
+
     if (($(".navbar").width()) === (0)){
         console.log("nav is opening")
         openNav()
@@ -11,7 +11,6 @@ function setNav() {
         closeNav()
         } 
     }
-
 
 function openNav() {
   $(".navbar").css("width", "15%");
