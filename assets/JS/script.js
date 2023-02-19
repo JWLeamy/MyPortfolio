@@ -28,7 +28,7 @@ function closeNav() {
   $(".icon svg").css("transform", "rotate(-45deg)")
 }
 
-//----------- Scroll Effects With JavaScript functions --------------//
+//----------- Scroll Effects  --------------//
 
 $(window).scroll(function () {
   $(".hidden").each(function (i) {
@@ -37,8 +37,29 @@ $(window).scroll(function () {
     if (bottom_of_window > bottom_of_object) {
       $(this).addClass("show");
     }
+    if (bottom_of_window < bottom_of_object) {
+      $(this).addClass(".hidden")
+    }
   });
 });
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 //----------- Jumping Letters animation --------------//
 /*
