@@ -394,3 +394,37 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+/*-----About Me------*/
+.formats {
+  display: flex;
+  justify-content: center;
+}
+.abm {
+  margin-top: 200px;
+  display: flex;
+  box-shadow: 0px 0px 15px #25282b;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  min-height: 400px;
+  width: 75%;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+}
+
+.abmhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+  border-right: 5px solid var(--lightblue);
+}
