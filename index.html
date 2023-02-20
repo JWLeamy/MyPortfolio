@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Leamy</title>
 <!--CSS links-->
     <link rel="stylesheet" href="./assets/CSS/style.css" />
-<!--Font Awesome for Icons-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>John Leamy</title>
+    <!--Font Awesome-->
+    <script
+    src="https://kit.fontawesome.com/bf37de4bfe.js"
+    crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
 
             <a href="#" class="navbut"><i class="navcon fa-regular fa-user"></i><br>About Me</a>
 
-            <a href="#" class="navbut"><i class="navcon fa-solid fa-computer"></i><br>My Projects</a>
+            <a href="#psections" class="navbut"><i class="navcon fa-solid fa-computer"></i><br>My Projects</a>
 
             <a href="#" class="navbut"><i class="navcon fa-regular fa-envelope"></i><br>Contact Info</a>
 
@@ -67,30 +72,32 @@
             </h2>
         </div>
 
-        <!--About Me Section and Layout-->
-        <section class="projects hidden">
-            <section class="cards">
-                <h2>Pixum</h2>
-                <a href="https://mkalik.github.io/pixum/">
-                    <div class="blank-result-card">
-                        <div class="movie-poster-container" >
-                        <img src="assets/Images/aa.png" class="app-thumbnail">
+        <!--Projects Section and Layout-->
+        <div id="psections" class="hidden">
+            <h2 class="projecthead">Projects & Applications</h2>
+            <section class="projects">
+                <section class="cards">
+                    <h2>Pixum</h2>
+                    <a href="https://mkalik.github.io/pixum/">
+                        <div class="blank-result-card">
+                            <div class="movie-poster-container" >
+                            <img src="assets/Images/aa.png" class="app-thumbnail">
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </section>
-            <section class="cards">
-                <h2>SneakyLink</h2>
-                <a href="https://sneakylink-project-2.herokuapp.com/">
-                    <div class="blank-result-card">
-                        <div class="movie-poster-container" >
-                        <img src="assets/Images/SneakyS.png" class="app-thumbnail">
+                    </a>
+                </section>
+                <section class="cards">
+                    <h2>SneakyLink</h2>
+                    <a href="https://sneakylink-project-2.herokuapp.com/">
+                        <div class="blank-result-card">
+                            <div class="movie-poster-container" >
+                            <img src="assets/Images/SneakyS.png" class="app-thumbnail">
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </section>
             </section>
-            
-        </section>
+        </div>
 
         <!-- Projects Section -->
 
